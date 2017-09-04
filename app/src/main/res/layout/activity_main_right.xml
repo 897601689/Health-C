@@ -4,31 +4,129 @@
     android:layout_height="match_parent"
     android:layout_marginTop="5dp"
     android:background="#00000000"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <ImageView
+        <!-- 血糖 -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/k2" />
+            android:background="@drawable/k2"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-        <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="血糖(mmol)"
+                android:textColor="#00FFFF"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_bs_high"
+                        style="@style/main_txt_limit"
+                        android:text="6.9"
+                        android:textColor="#00FFFF" />
+
+                    <TextView
+                        android:id="@+id/txt_bs_low"
+                        style="@style/main_txt_limit"
+                        android:text="3.9"
+                        android:textColor="#00FFFF" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_bs"
+                    style="@style/main_txt_value"
+                    android:text="5.5"
+                    android:textColor="#00FFFF"
+                    android:textSize="70sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- 白细胞 -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/k2" />
+            android:background="@drawable/k2"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白细胞(10^ 9/L)"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_um_high"
+                        style="@style/main_txt_limit"
+                        android:text="9.5"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/txt_um_low"
+                        style="@style/main_txt_limit"
+                        android:text="3.5"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_um"
+                    style="@style/main_txt_value"
+                    android:text="11.5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="70sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
         <ImageView
             android:id="@+id/m_um"
             android:layout_width="wrap_content"
@@ -36,14 +134,29 @@
             android:layout_marginTop="10dp"
             android:adjustViewBounds="true"
             android:src="@drawable/k7" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/back_left"
-            android:layout_margin="15dp"
             android:layout_alignBottom="@+id/m_um"
-            android:layout_alignEnd="@+id/m_um"/>
+            android:layout_alignEnd="@+id/m_um"
+            android:layout_margin="15dp"
+            android:background="@drawable/back_left" />
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/m_um1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/k7" />
+
+    </LinearLayout>
 
 </LinearLayout>

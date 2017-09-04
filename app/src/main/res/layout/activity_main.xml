@@ -6,7 +6,7 @@
     android:background="@drawable/m_bg"
     android:orientation="vertical"
     tools:context=".activity.MainActivity">
-
+    <!-- 顶部布局 -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="50dp"
@@ -29,6 +29,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
             android:background="@drawable/m_name"
+            android:gravity="center"
+            android:textColor="@color/Black"
             android:textSize="25sp" />
 
         <TextView
@@ -44,7 +46,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
-            android:background="@drawable/m_sex" />
+            android:background="@drawable/m_sex"
+            android:gravity="center"
+            android:textColor="@color/White"
+            android:textSize="25sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -59,16 +64,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
-            android:background="@drawable/m_age" />
+            android:background="@drawable/m_age"
+            android:gravity="center"
+            android:textColor="@color/White"
+            android:textSize="25sp" />
 
-        <Button
+        <TextView
             android:id="@+id/m_scan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/m_button"
+            android:gravity="center"
             android:text="扫描"
             android:textColor="@color/White"
             android:textSize="25sp" />
     </LinearLayout>
+    <!-- 中间布局 -->
     <android.support.v4.view.ViewPager
         android:id="@+id/data_pager"
         android:layout_width="match_parent"
@@ -76,7 +87,7 @@
         android:layout_height="wrap_content">
 
     </android.support.v4.view.ViewPager>
-
+    <!-- 底部按键 -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="90dp"

@@ -1,6 +1,7 @@
 package com.health_c.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -71,6 +72,8 @@ public class SystemActivity extends Activity {
 
     @OnClick(R.id.sys_doctor)
     protected void sysDoctor() {
+        Intent intent = new Intent(this, DoctorInfoActivity.class);
+        startActivity(intent);
     }
 
 }

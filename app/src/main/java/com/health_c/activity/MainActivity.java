@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -31,7 +32,7 @@ public class MainActivity extends ActivityGroup {
     @BindView(R.id.m_age)
     TextView mAge;
     @BindView(R.id.m_scan)
-    Button mScan;
+    TextView mScan;
     @BindView(R.id.m_save)
     Button mSave;
     @BindView(R.id.m_user_info)
@@ -50,6 +51,8 @@ public class MainActivity extends ActivityGroup {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);   //应用运行时，保持屏幕高亮，不锁屏
+
         initView();
         init();
     }
@@ -129,13 +132,13 @@ public class MainActivity extends ActivityGroup {
 
     @OnClick(R.id.m_test_info)
     protected void setTestInfo() {
-        Intent intent = new Intent(this, TestInfoActivity.class);
+        Intent intent = new Intent(this, TestActivity.class);
         startActivity(intent);
     }
 
     @OnClick(R.id.m_sys_info)
     protected void setSysInfo() {
-        Intent intent = new Intent(this, UmActivity.class);
+        Intent intent = new Intent(this, SystemActivity.class);
         startActivity(intent);
     }
 

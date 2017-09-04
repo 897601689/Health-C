@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:id="@+id/item_title_layout"
@@ -25,6 +25,7 @@
         <TextView
             android:id="@+id/item_id"
             style="@style/list_tv1"
+            android:ems="9"
             android:text="150423199303090016" />
 
         <View style="@style/vertical_layout" />
@@ -32,6 +33,7 @@
         <TextView
             android:id="@+id/item_name"
             style="@style/list_tv2"
+            android:ems="3"
             android:text="@string/name" />
 
         <View style="@style/vertical_layout" />
@@ -39,6 +41,7 @@
         <TextView
             android:id="@+id/item_sex"
             style="@style/list_tv2"
+            android:ems="1"
             android:text="@string/sex" />
 
         <View style="@style/vertical_layout" />
@@ -46,6 +49,7 @@
         <TextView
             android:id="@+id/item_age"
             style="@style/list_tv2"
+            android:maxEms="3"
             android:text="@string/age" />
     </LinearLayout>
 

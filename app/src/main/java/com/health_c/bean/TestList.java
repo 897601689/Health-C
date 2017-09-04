@@ -1,7 +1,7 @@
 package com.health_c.bean;
 
 /**
- * Created by Admin on 2016/8/2.
+ * Created by Admin on 2016/8/2. 测试数据
  */
 public class TestList {
 

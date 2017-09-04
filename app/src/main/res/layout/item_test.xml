@@ -19,6 +19,7 @@
         <TextView
             android:id="@+id/item_name"
             style="@style/list_tv2"
+            android:ems="4"
             android:text="体温检测" />
 
         <View style="@style/vertical_layout" />
@@ -26,6 +27,7 @@
         <TextView
             android:id="@+id/item_result"
             style="@style/list_tv2"
+            android:ems="6"
             android:text="检测值" />
 
         <View style="@style/vertical_layout" />
@@ -33,7 +35,7 @@
         <TextView
             android:id="@+id/item_time"
             style="@style/list_tv2"
-            android:layout_weight="1.3"
+            android:ems="6"
             android:text="2016-08-02 10:47:30" />
 
         <View style="@style/vertical_layout" />
@@ -41,6 +43,7 @@
         <TextView
             android:id="@+id/item_doctor"
             style="@style/list_tv2"
+            android:ems="4"
             android:text="检测医生" />
     </LinearLayout>
 

@@ -237,7 +237,7 @@
 
             <LinearLayout
                 style="@style/um_style"
-                android:background="@drawable/bp_bg_white">
+                android:background="@drawable/bp_bg_gray">
 
                 <TextView
                     style="@style/um_text"
@@ -257,7 +257,7 @@
 
             <LinearLayout
                 style="@style/um_style"
-                android:background="@drawable/bp_bg_gray">
+                android:background="@drawable/bp_bg_white">
 
                 <TextView
                     style="@style/um_text"
@@ -277,7 +277,7 @@
 
             <LinearLayout
                 style="@style/um_style"
-                android:background="@drawable/bp_bg_white">
+                android:background="@drawable/bp_bg_gray">
 
                 <TextView
                     style="@style/um_text"
